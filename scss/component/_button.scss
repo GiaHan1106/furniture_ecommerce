@@ -1,0 +1,26 @@
+.s_button_1 {
+    padding: 10px 30px;
+    background-color: $primary-color;
+    color: #fff;
+    border: 1px solid $primary-color;
+    font-size: $fs-14;
+    font-weight: $fw-700;
+    transition: 0.5s;
+    z-index: 99;
+    position: relative;
+    &.border {
+        background-color: transparent;
+        color: $primary-color;
+        border: 1px solid $primary-color;
+        &:hover {
+            background-color: $primary-color;
+            color: #fff;
+            border: 1px solid $primary-color;
+        }
+    }
+    &:hover {
+        color: $primary-color;
+        background-color: #fff;
+        border: 1px solid $primary-color;
+    }
+}

@@ -1,0 +1,59 @@
+.s-ourGreatTeam {
+    .s_our {
+        border-bottom: 1px solid #eee;
+        .s_top {
+            h2 {
+                text-align: center;
+                margin: 1rem 0 2.5rem 0;
+                font-size: $fs-25;
+                font-weight: $fw-700;
+                @media (max-width: 767px) {
+                    margin: 0rem 0 0.5rem 0;
+                }
+            }
+        }
+        .s_bot {
+            position: relative;
+            .s_inforPeople {
+                text-align: center;
+                margin: 1rem 0;
+                &:hover {
+                    h4 {
+                        color: #eeaf79;
+                    }
+                    .s_social {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+                h4 {
+                    font-size: $fs-16;
+                    font-weight: $fw-700;
+                    transition: 0.5s;
+                    cursor: pointer;
+                }
+                h5 {
+                    font-size: $fs-16;
+                    color: $four-color;
+                    font-weight: $fw-400;
+                }
+                .s_social {
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: 0.5s;
+                    @media (max-width: 991px) {
+                        display: none;
+                    }
+                    i {
+                        margin-right: 1rem;
+                        transition: 0.5s;
+                        cursor: pointer;
+                        &:hover {
+                            color: #5297d4;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

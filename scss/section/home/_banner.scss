@@ -1,0 +1,119 @@
+.s-banner {
+    position: relative;
+    height: 100vh;
+    overflow-x: hidden;
+    @media (max-width: 767px) {
+        height: unset;
+    }
+
+    .s_item {
+        opacity: 0;
+        &::after {
+            content: "";
+            @include posAbsolute("tr", 0, -10%);
+            height: 100%;
+            width: 60%;
+            background-color: var(--bg);
+            z-index: -1;
+        }
+        &:not(:first-child) {
+            @include posAbsolute("tl", 0, 50%);
+            transform: translateX(-50%);
+            width: 90%;
+            opacity: 0;
+        }
+        transition: 0.5s;
+        &.active {
+            opacity: 1;
+            .s_left {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            .s_right {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    }
+    .s_left {
+        padding-top: 14em;
+        position: relative;
+        z-index: 9999;
+        transform: translateY(100px);
+        opacity: 0;
+        transition: 1s;
+        h1 {
+            font-weight: $fw-700;
+            span {
+                display: block;
+            }
+        }
+        p {
+            margin: 2em 0;
+            span {
+                display: block;
+            }
+        }
+    }
+    .s_right {
+        padding-top: 9em;
+        height: 100vh;
+        transform: translateY(-100px);
+        opacity: 0;
+        transition: 1s;
+        @media (max-width: 767px) {
+            height: unset;
+            padding-top: 3em;
+        }
+        img {
+            width: 50%;
+            margin-left: 10em;
+            @media (max-width: 767px) {
+                margin-left: unset;
+                margin: 0 auto;
+            }
+        }
+    }
+    .s_arrow {
+        @include posAbsolute("bl", 0, 50%);
+        transform: translateX(-50%);
+        cursor: pointer;
+        i {
+            &:first-child {
+                color: #fff;
+                background-color: $primary-color;
+                padding: 30px 40px;
+            }
+            &:last-child {
+                color: $primary-color;
+                background-color: #fff;
+                padding: 30px 40px;
+            }
+        }
+    }
+    @media (max-width: 991px) {
+        .s_left {
+            padding-top: 8em;
+            h1 {
+                font-size: $fs-25;
+            }
+            p {
+                font-size: $fs-16;
+                margin: 1em 0;
+            }
+        }
+        .s_arrow {
+            i {
+                &:first-child,
+                &:last-child {
+                    padding: 10px 20px;
+                }
+            }
+        }
+    }
+    @media (max-width: 767px) {
+        .s_left {
+            text-align: center;
+        }
+    }
+}

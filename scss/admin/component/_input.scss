@@ -1,0 +1,35 @@
+.c-input-1 {
+    margin-bottom: 1.5rem;
+    position: relative;
+    img {
+        @include posAbsolute("tr", 35px, 10px);
+        border: 1px solid $primary-color;
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+    }
+    p {
+        margin-bottom: 0.3rem;
+    }
+    input {
+        border: 1px solid #d3d3d3;
+        background-color: #fff;
+        border-radius: 5px;
+        width: 100%;
+        padding: 0.5rem;
+    }
+    select {
+        width: 100%;
+        padding: 0.5rem;
+        border: 1px solid #d3d3d3;
+    }
+    textarea {
+        width: 100%;
+        border: 1px solid #d3d3d3;
+    }
+    &.file {
+        input {
+            padding: 0.3rem;
+        }
+    }
+}

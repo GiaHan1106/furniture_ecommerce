@@ -1,0 +1,118 @@
+.s-listPro {
+    .s_top {
+        ul {
+            display: flex;
+            li {
+                margin-right: 0.7rem;
+                &:first-child {
+                    color: $four-color;
+                }
+            }
+        }
+    }
+    .s_bot {
+        .s_left {
+            .s_catePriceAndColor {
+                .s_material {
+                    span {
+                        margin-right: 1rem;
+                        width: 10%;
+                    }
+                    img {
+                        width: 100%;
+                    }
+                }
+                margin-bottom: 3rem;
+                h4 {
+                    margin-top: 2rem;
+                    font-size: $fs-14;
+                    font-weight: 700;
+                    margin-bottom: 0.7rem;
+                }
+                ul {
+                    li {
+                        font-weight: 500;
+                        color: #bcbcbc;
+                        font-size: $fs-14;
+                        margin-bottom: 0.6rem;
+                        transition: 0.5s;
+                        @include flexBox("center", "");
+                        cursor: pointer;
+                        &:hover {
+                            color: $primary-color;
+                        }
+                        .s_color {
+                            margin-right: 0.7rem;
+                            width: 12px;
+                            height: 12px;
+                            display: block;
+                            border-radius: 50%;
+                        }
+                        .s_marerial {
+                            width: 10%;
+                            margin-right: 0.7rem;
+                        }
+                    }
+                }
+            }
+        }
+        .s_right {
+            .s_text {
+                margin-top: 1.6rem;
+                @include flexBox("center", "");
+                h5 {
+                    color: #e7b294;
+                    margin-right: 0.7rem;
+                    font-size: $fs-14;
+                    font-weight: 700;
+                }
+                h4 {
+                    font-size: $fs-14;
+                    color: #bcbcbc;
+                    font-weight: 500;
+                    span {
+                        color: $primary-color;
+                    }
+                }
+            }
+            .s_ListSomePro {
+                margin: 2rem 0;
+                .s_inforPro {
+                    position: relative;
+                    .s_namePro {
+                        margin-top: 1rem;
+                        text-align: center;
+                        h4 {
+                            font-size: $fs-16;
+                        }
+                        h5 {
+                            font-size: $fs-16;
+                            span {
+                                color: #bcbcbc;
+                                text-decoration: line-through;
+                                font-size: $fs-14;
+                                margin-right: 0.6rem;
+                            }
+                        }
+                    }
+                    .s_saleAndHot {
+                        @include posAbsolute("tr", 10px, 10px);
+                        color: #fff;
+                        .s_sale {
+                            background-color: #9e0a0f;
+                            padding: 0.2rem 0.5rem;
+                            font-weight: 600;
+                            font-size: $fs-14;
+                        }
+                        .s_hot {
+                            background-color: #f7941c;
+                            padding: 0.2rem 0.5rem;
+                            font-weight: 600;
+                            font-size: $fs-14;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

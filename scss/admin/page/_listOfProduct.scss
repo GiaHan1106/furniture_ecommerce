@@ -1,0 +1,14 @@
+.s-listOfProduct {
+    padding-bottom: 2rem;
+    .c_bot {
+        .c_box {
+            input {
+                &:nth-child(8),
+                &:last-child {
+                    background-color: #fff;
+                    border: 1px solid $primary-color;
+                }
+            }
+        }
+    }
+}

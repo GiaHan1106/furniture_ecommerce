@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  scroll-behavior: smooth;
+}
+
+.s_button_1 {
+  padding: 10px 30px;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #000;
+  font-size: 0.8em;
+  font-weight: 700;
+  transition: 0.5s;
+  z-index: 99;
+  position: relative;
+}
+.s_button_1.border {
+  background-color: transparent;
+  color: #000;
+  border: 1px solid #000;
+}
+.s_button_1.border:hover {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #000;
+}
+.s_button_1:hover {
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+
+.c-input-1 {
+  margin-bottom: 1rem;
+  display: grid;
+}
+.c-input-1 label {
+  margin-bottom: 0.5rem;
+}
+.c-input-1 input {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+body {
+  background-color: #f3f6ff;
+}
+
+.c-dashboard {
+  background-color: #fff;
+}
+.c-dashboard h2 {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  font-weight: 600;
+}
+.c-dashboard .c_menu {
+  padding: 3rem 2rem;
+}
+.c-dashboard .c_menu li {
+  margin-bottom: 1.6rem;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.c-dashboard .c_menu li:nth-child(2) a {
+  display: flex;
+}
+.c-dashboard .c_menu li:nth-child(2) a i {
+  transition: 0.5s;
+}
+.c-dashboard .c_menu li:nth-child(2) a i.active {
+  transform: rotate(180deg);
+}
+.c-dashboard .c_menu li:nth-child(2) a i:last-child {
+  margin-left: auto;
+}
+.c-dashboard .c_menu li i {
+  margin-right: 0.5rem;
+}
+.c-dashboard .c_menu li:hover {
+  color: #6384e8;
+}
+.c-dashboard .c_menu li .c_subMenu {
+  margin-top: 1.6rem;
+  display: none;
+}
+.c-dashboard .c_menu li .c_subMenu li {
+  margin-left: 1.5rem;
+  color: #aaaaaa;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.c-dashboard .c_menu li .c_subMenu li:hover {
+  margin-left: 2.5rem;
+}
+
+.c_nameAd {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 3.5rem;
+}
+.c_nameAd h3 {
+  margin-right: auto;
+}
+.c_nameAd .button2 {
+  border: none;
+  background-color: transparent;
+  font-size: 0.8em;
+  text-decoration: underline;
+  margin-right: 1rem;
+}
+.c_nameAd .c_name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 1rem;
+  width: 20%;
+  margin-right: 1rem;
+  border-radius: 50px;
+}
+.c_nameAd .c_name h5 {
+  font-size: 0.8em;
+  padding-top: 0.5rem;
+  color: #6384e8;
+}
+.c_nameAd .c_name img {
+  width: 13%;
+  border-radius: 50%;
+}
+
+.c-input-1 {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+.c-input-1 img {
+  position: absolute;
+  top: 35px;
+  right: 10px;
+  border: 1px solid #000;
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+.c-input-1 p {
+  margin-bottom: 0.3rem;
+}
+.c-input-1 input {
+  border: 1px solid #d3d3d3;
+  background-color: #fff;
+  border-radius: 5px;
+  width: 100%;
+  padding: 0.5rem;
+}
+.c-input-1 select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #d3d3d3;
+}
+.c-input-1 textarea {
+  width: 100%;
+  border: 1px solid #d3d3d3;
+}
+.c-input-1.file input {
+  padding: 0.3rem;
+}
+
+.c-table {
+  margin-top: 3rem;
+}
+.c-table thead tr th {
+  text-align: center;
+}
+.c-table tbody tr td {
+  text-align: center;
+  width: 20%;
+}
+.c-table tbody tr td:first-child {
+  width: 5%;
+}
+.c-table tbody tr td:nth-child(3) {
+  text-align: left;
+}
+.c-table tbody tr td img {
+  width: 20%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+.c-table tbody tr td button {
+  background-color: transparent;
+  padding: 0.2rem 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.s-login {
+  border-top: 1px solid rgba(238, 238, 238, 0.9450980392);
+  margin-top: 2rem;
+  padding: 2rem 0;
+}
+.s-login h3 {
+  text-align: center;
+  font-weight: 400;
+  margin-top: 2rem;
+  color: rgb(173, 24, 24);
+  display: none;
+}
+.s-login h2 {
+  margin-top: 2rem;
+  text-align: center;
+}
+.s-login .s_bot {
+  width: 30%;
+  margin: 0 auto;
+}
+.s-login .s_bot .s_button_1 {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 0.8rem;
+}
+.s-login .s_bot .s_create {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.8em;
+  font-style: italic;
+}
+.s-login .s_bot .s_create a {
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.s-listOfProduct {
+  padding-bottom: 2rem;
+}
+.s-listOfProduct .c_bot .c_box input:nth-child(8), .s-listOfProduct .c_bot .c_box input:last-child {
+  background-color: #fff;
+  border: 1px solid #000;
+}
+
+.s-userDetail .c_bot .c_box select {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.s-orderDetail .s_order {
+  margin-top: 2rem;
+}
+.s-orderDetail .s_order h2 {
+  font-size: 1.4em;
+}
+.s-orderDetail .s_order .s_inforCus .s_infor {
+  background-color: #eee;
+  padding: 1rem;
+}
+.s-orderDetail .s_order .s_inforCus .s_contactCustomer {
+  margin-top: 2rem;
+}
+.s-orderDetail .s_order .s_inforCus .s_contactCustomer a {
+  background-color: #000;
+  color: #fff;
+  padding: 0.6rem 4rem;
+  border-radius: 0.4rem;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.s-orderDetail .s_order .s_inforCus .s_contactCustomer a:hover {
+  background-color: #fff;
+  color: #000;
+}
+.s-orderDetail .s_order .s_inforCus button {
+  color: #fff;
+  padding: 0.4rem 4rem;
+  border-radius: 0.4rem;
+  transition: 0.5s;
+  border: 1px solid #000;
+  color: #000;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 1rem;
+}
+.s-orderDetail .s_order .s_inforCus button:hover {
+  background-color: #fff;
+}
+.s-orderDetail .s_order .s_table .s_top .c-table {
+  margin-top: unset;
+}
+.s-orderDetail .s_order .s_table .s_top .c-table tbody tr td img {
+  width: 50%;
+}
+.s-orderDetail .s_order .s_table .s_totalPrice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  font-size: 1em;
+}
+.s-orderDetail .s_order .s_table .s_totalPrice span {
+  font-weight: 600;
+  margin-right: 0.5rem;
+  margin-left: 1rem;
+}
+.s-orderDetail .s_order .s_table .s_bot p {
+  background-color: #eee;
+  height: 100px;
+  width: 100%;
+  padding: 1rem;
+}/*# sourceMappingURL=admin.css.map */

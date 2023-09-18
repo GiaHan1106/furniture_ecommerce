@@ -1,0 +1,62 @@
+.c-product {
+    position: relative;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 2rem;
+    .c_sale {
+        @include posAbsolute("tr", 10px, 10px);
+        h3 {
+            padding: 0.4em 0.5em;
+            background-color: #9d0b0f;
+            color: #fff;
+            font-weight: $fw-500;
+            font-size: $fs-14;
+        }
+        @media (max-width: 575px) {
+            h3 {
+                padding: 0.2em 0.3em;
+            }
+        }
+    }
+    .c_images {
+        position: relative;
+        &::before {
+            @include afterAndBefore();
+            background-color: #00000064;
+            height: 100%;
+            opacity: 0;
+            visibility: hidden;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        &:hover::before {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    .c_namePro {
+        text-align: center;
+        margin-top: 1em;
+
+        h3 {
+            font-size: $fs-16;
+            font-weight: $fw-400;
+            @media (max-width: 575px) {
+                font-size: $fs-14;
+            }
+        }
+        h4 {
+            font-size: $fs-16;
+            font-weight: $fw-400;
+            @media (max-width: 575px) {
+                font-size: $fs-14;
+            }
+            span {
+                text-decoration: line-through;
+                color: $third-color;
+                font-size: $fs-14;
+                margin-right: 0.6em;
+            }
+        }
+    }
+}

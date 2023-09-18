@@ -1,0 +1,51 @@
+.s-userProfile {
+    border-top: 1px solid #eeeeeef1;
+    margin-top: 2rem;
+    padding: 2rem 0;
+    .s_left {
+        display: grid;
+        .s_button_1 {
+            width: 90%;
+            margin-bottom: 1rem;
+        }
+    }
+    .s_box {
+        display: none;
+        button {
+            margin: 0.5rem 0;
+            padding: 0.3rem 2rem;
+            background-color: $primary-color;
+            color: #fff;
+            border: 1px solid $primary-color;
+            transition: 0.5s;
+            &:hover {
+                border: 1px solid $primary-color;
+                background-color: #fff;
+                color: $primary-color;
+            }
+        }
+        &.active {
+            display: block;
+        }
+        h3 {
+            font-size: $fs-16;
+        }
+        p {
+            font-weight: $fw-300;
+        }
+        .s_bot {
+            .s_button_1 {
+                width: 100%;
+            }
+        }
+        h5 {
+            font-size: $fs-16;
+            font-weight: $fw-400;
+            margin-bottom: 1rem;
+        }
+        .s_totalPrice {
+            font-weight: $fw-600;
+            text-align: right;
+        }
+    }
+}

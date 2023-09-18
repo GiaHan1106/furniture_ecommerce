@@ -1,0 +1,60 @@
+.s_checkout {
+    border-top: 1px solid #eeeeeef1;
+    margin-top: 2rem;
+    padding: 2rem 0;
+    .s_left {
+        h2 {
+            font-size: $fs-18;
+            font-weight: $fw-700;
+            margin-bottom: 2rem;
+        }
+        .s_input {
+            @include flexBox("center", "between");
+            margin-bottom: 1rem;
+
+            h5 {
+                font-size: $fs-16;
+                width: 20%;
+            }
+            input {
+                width: 80%;
+                padding: 0.5rem;
+            }
+        }
+        textarea {
+            width: 80%;
+            padding: 0.5rem;
+        }
+    }
+    .s_button_1 {
+        width: 100%;
+    }
+
+    .s_right {
+        background-color: #efefef;
+        padding: 3rem 3rem 0 3rem;
+        h3 {
+            font-size: $fs-16;
+            font-weight: $fw-700;
+            margin-bottom: 2rem;
+        }
+        .s_order {
+            @include flexBox("", "between");
+            border-bottom: 1px solid #d1d1d1;
+            padding-top: 1rem;
+            &:nth-child(6) {
+                border-bottom: 1px solid $primary-color;
+            }
+            &:last-child {
+                border-bottom: unset;
+            }
+            .s_orderText {
+                font-size: $fs-16;
+            }
+            .s_orderPrice {
+                font-size: $fs-16;
+                font-weight: 500;
+            }
+        }
+    }
+}

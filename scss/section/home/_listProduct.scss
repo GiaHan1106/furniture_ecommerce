@@ -1,0 +1,25 @@
+.s-listProduct {
+    margin: 2em 0.5em;
+    @media (max-width: 991px) {
+        .s_inforPro {
+            margin-bottom: 1em;
+        }
+    }
+    .s_inforPro {
+        position: relative;
+        display: block;
+        &::before {
+            @include afterAndBefore();
+            background-color: rgba(0, 0, 0, 0.524);
+        }
+        .s_text {
+            @include posAbsolute("tl", 50%, 50%);
+            transform: translate(-50%, -50%);
+            h3 {
+                color: #fff;
+                font-size: $fs-18;
+                font-weight: $fw-700;
+            }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+.s-ourServices {
+    padding: 4rem 0;
+    @media (max-width: 767px) {
+        padding: 0;
+    }
+    .s_top {
+        h2 {
+            text-align: center;
+            margin: 2rem 0 2.5rem 0;
+            font-size: $fs-25;
+            font-weight: $fw-700;
+            @media (max-width: 767px) {
+                margin: 1rem 0 1rem 0;
+            }
+        }
+    }
+    .s_bot {
+        .s_service {
+            img {
+                width: 25%;
+                margin: 2rem auto;
+            }
+            .s_text {
+                text-align: center;
+                &:hover {
+                    h4 {
+                        color: #eeaf79;
+                    }
+                }
+                h4 {
+                    font-size: $fs-16;
+                    font-weight: $fw-600;
+                    transition: 0.5s;
+                    cursor: pointer;
+                }
+                h5 {
+                    font-size: $fs-16;
+                    color: $four-color;
+                    font-weight: $fw-400;
+                }
+            }
+        }
+    }
+}

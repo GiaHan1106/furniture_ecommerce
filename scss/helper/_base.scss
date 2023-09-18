@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+img {
+    width: 100%;
+    display: block;
+}
+html {
+    font-size: 16px;
+}
+body {
+    font-family: $primary-font;
+    font-weight: $fw-400;
+    scroll-behavior: smooth;
+}

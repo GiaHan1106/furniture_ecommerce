@@ -1,0 +1,60 @@
+.s-sale {
+    position: relative;
+    margin-top: 6em;
+    background-image: url(../img/sale.jpeg);
+    background-size: cover;
+    background-position: center;
+    padding: 7rem 0;
+    @media (max-width: 767px) {
+        margin-top: 1em;
+        padding: 3rem 0;
+    }
+    .s_saleText {
+        text-align: center;
+
+        .s_text {
+            z-index: 9;
+            position: relative;
+            h4 {
+                font-size: $fs-14;
+                font-weight: $fw-500;
+            }
+            h2 {
+                font-size: $fs-40;
+                font-weight: $fw-700;
+                @media (max-width: 767px) {
+                    font-size: $fs-36;
+                }
+                @media (max-width: 575px) {
+                    font-size: $fs-30;
+                }
+            }
+        }
+        h1 {
+            font-size: $fs-100;
+            color: #ed9fa6;
+            font-weight: $fw-800;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0.2;
+            transition: 0.5s;
+            animation: sale 1s infinite alternate;
+            @media (max-width: 767px) {
+                font-size: $fs-80;
+            }
+            @media (max-width: 575px) {
+                font-size: $fs-60;
+            }
+        }
+    }
+}
+@keyframes sale {
+    from {
+        transform: translateX(-50%) scale(1);
+    }
+    to {
+        transform: translateX(-50%) scale(1.1);
+    }
+}

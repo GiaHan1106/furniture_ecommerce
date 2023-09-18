@@ -1,0 +1,53 @@
+@mixin flexBox($alighItem: none, $justify: none) {
+    display: flex;
+    @if ($alighItem == "center") {
+        align-items: center;
+    }
+    @if ($justify == "center") {
+        justify-content: center;
+    }
+    @if ($justify == "between") {
+        justify-content: space-between;
+    }
+}
+@mixin posAbsolute($pos, $y, $x) {
+    position: absolute;
+    @if ($pos == "tl") {
+        top: $y;
+        left: $x;
+    }
+    @if ($pos == "tr") {
+        top: $y;
+        right: $x;
+    }
+    @if ($pos == "bl") {
+        bottom: $y;
+        left: $x;
+    }
+    @if ($pos == "br") {
+        bottom: $y;
+        right: $x;
+    }
+    @if ($pos == "centerX") {
+        top: $y;
+        left: $x;
+        transform: translateX(-50%);
+    }
+    @if ($pos == "centerY") {
+        top: $y;
+        left: $x;
+        transform: translateY(-50%);
+    }
+    @if ($pos == "centerXY") {
+        top: $y;
+        left: $x;
+        transform: translate(-50%, -50%);
+    }
+}
+@mixin afterAndBefore() {
+    @include posAbsolute("tr", 0, 0);
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+}

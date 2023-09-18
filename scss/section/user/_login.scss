@@ -1,0 +1,35 @@
+.s-login {
+    border-top: 1px solid #eeeeeef1;
+    margin-top: 2rem;
+    padding: 2rem 0;
+    h3 {
+        text-align: center;
+        font-weight: $fw-400;
+        margin-top: 2rem;
+        color: rgb(173, 24, 24);
+        display: none;
+    }
+    h2 {
+        margin-top: 2rem;
+        text-align: center;
+    }
+    .s_bot {
+        width: 30%;
+        margin: 0 auto;
+        .s_button_1 {
+            width: 100%;
+            padding: 0.8rem;
+            margin-top: 0.8rem;
+        }
+        .s_create {
+            margin-top: 1rem;
+            text-align: center;
+            font-size: $fs-14;
+            font-style: italic;
+            a {
+                text-decoration: underline;
+                font-weight: $fw-500;
+            }
+        }
+    }
+}

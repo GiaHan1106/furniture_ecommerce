@@ -1,0 +1,78 @@
+.s-orderDetail {
+    .s_order {
+        margin-top: 2rem;
+        h2 {
+            font-size: $fs-20;
+        }
+        .s_inforCus {
+            .s_infor {
+                background-color: #eee;
+                padding: 1rem;
+            }
+            .s_contactCustomer {
+                margin-top: 2rem;
+                a {
+                    background-color: $primary-color;
+                    color: #fff;
+                    padding: 0.6rem 4rem;
+                    border-radius: 0.4rem;
+                    transition: 0.5s;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: #fff;
+                        color: $primary-color;
+                    }
+                }
+            }
+            button {
+                color: #fff;
+                padding: 0.4rem 4rem;
+                border-radius: 0.4rem;
+                transition: 0.5s;
+                border: 1px solid $primary-color;
+                color: $primary-color;
+                cursor: pointer;
+                width: 100%;
+                margin-top: 1rem;
+                &:hover {
+                    background-color: #fff;
+                }
+            }
+        }
+        .s_table {
+            .s_top {
+                .c-table {
+                    margin-top: unset;
+                    tbody {
+                        tr {
+                            td {
+                                img {
+                                    width: 50%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .s_totalPrice {
+                @include flexBox("center", "between");
+                font-weight: $fw-600;
+                margin-top: 1.5rem;
+                font-size: $fs-16;
+                span {
+                    font-weight: $fw-600;
+                    margin-right: 0.5rem;
+                    margin-left: 1rem;
+                }
+            }
+            .s_bot {
+                p {
+                    background-color: #eee;
+                    height: 100px;
+                    width: 100%;
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+}
