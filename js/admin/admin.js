@@ -1,6 +1,6 @@
 const inputEmail = document.querySelector("input[name='email']");
 const inputPassword = document.querySelector("input[name='password']");
-const URL_API = "http://localhost:3000";
+const URL_API = "https://furniture-hjgp.onrender.com";
 const button = document.querySelector(".s_button_1");
 const boxLogin = document.querySelector(".s-login .s_bot");
 const textLogin = document.querySelector(".s-login h3");

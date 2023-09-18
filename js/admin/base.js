@@ -57,7 +57,7 @@ $(function () {
     });
 });
 
-const URL_API = "http://localhost:3000";
+const URL_API = "https://furniture-hjgp.onrender.com";
 async function getData(URL) {
     const promist = await fetch(URL);
     const data = await promist.json();

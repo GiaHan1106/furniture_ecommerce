@@ -1,4 +1,4 @@
-const URL_API = "http://localhost:3000";
+const URL_API = "https://furniture-hjgp.onrender.com";
 const arrayCart = localStorage.getItem("LISTCART") ? JSON.parse(localStorage.getItem("LISTCART")) : [];
 
 //XU LY API
